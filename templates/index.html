@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+index
+{% endblock %}
+
+{% block main %}
+    <div>
+        <div>
+            <div class="index_title">
+                Bulls-and-Cows
+            </div>
+        </div>
+        <div>
+            <form action="/check" method="POST">
+                <div class="form-group">
+                    <input name="guess" type="text" placeholder="Enter a 4-digit number">
+                    <button type="submit" class="btn btn-primary">Enter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
